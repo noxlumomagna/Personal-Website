@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-USA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script data-pace-options='{"restartOnRequestAfter": false, "startOnPageLoad": false}' src="/assets/js/ProtoProjectPace.js"></script>
+    <link rel="stylesheet" href="/assets/css/ProtoProject.css">
+    <link rel="stylesheet" href="/assets/css/ProtoProjectPageLoader.css">
+    <script>
+        //if(window.innerWidth > 1024) Pace.start();
+        var svg = '<svg width="252" height="252" viewBox="0 0 252 252" fill="none" xmlns="http://www.w3.org/2000/svg"> \
+                    <circle cx="126" cy="126" r="125.5" stroke="#DDDDDD"/> \
+                    <circle cx="126" cy="126" r="125.5" stroke="#111111" stroke-dasharray="790px" stroke-dashoffset="790px" class="svg-progress-dash"/> \
+                   </svg>';
+        Pace.start();
+
+        var progressCircleEl = null;
+        Pace.on('start', function () {
+            var el = document.createElement('div');
+            el.classList.add('loader-svg');
+            el.innerHTML = svg;
+            progressCircleEl = el.querySelector('.svg-progress-dash');
+            Pace.bar.el.children[0].appendChild(el);
+        });
+        Pace.on('progress', function (p) {
+            progressCircleEl.setAttribute('stroke-dashoffset', (790 * (100 - p) / 100) + 'px');
+        });
+    </script>
+    <title>Derick Nguyen &#8211; Software Engineer</title>
+    <meta name='robots' content='noindex, nofollow' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+   
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='css/Text.css' type='text/css' media='all' />
+  
+    <link rel="apple-touch-icon" sizes="120x120" href="/wp-content/uploads/fbrfg/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png">
+
+    <link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/Normalize.css">
+    <link rel="stylesheet" href="/assets/css/Content.css">
+    <script src="/assets/js/themes.js"></script>
+    <script src="/assets/js/animation.js"></script>
+</head>
+
+<body class="home page-template page-template-page-minimal page-template-page-minimal-php page page-id-6">
+    <div class="wrapper">
+        <div class="wp-block-group max-width-container">
+            <div class="wp-block-group__inner-container">
+                <section class="home-header section-container">
+                    <h1 class="home-header__title heading--prime">Derick Nguyen</h1>
+                    <div class="home-header__content">
+                        <div class="home-header__left">
+                            <a class="home-header__email lines-shift-container"
+                                href="mailto:noxlumomagna@gmail.com">noxlumomagna@gmail.com</a>
+                            <div class="home-header__position lines-shift-container"
+                                style="--shift-delay: calc(var(--shift-base-delay) * 1)">Software Engineer</div>
+                            <div class="home-header__position lines-shift-container"
+                                style="--shift-delay: calc(var(--shift-base-delay) * 2)">Web Developer</div>
+                        </div>
+                        <div class="home-header__right">
+                            <div class="home-header__about-text">
+                                Based in Philadelphia, PA <span
+                                    class="home-header__local-time local-time-container"></span><br>
+                                Reach out. </div>
+                            <div class="home-header__social-links">
+                                <a href="https://www.linkedin.com/in/derick-nguyen-100devs/"
+                                    class="home-header__social-link link-underline">LinkedIn</a>
+                                <a href="https://twitter.com/KcireDNguyen"
+                                    class="home-header__social-link link-underline">Twitter</a>
+                                <a href="https://github.com/noxlumomagna"
+                                    class="home-header__social-link link-underline">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="wp-block-group home-projects section-container">
+                    <div class="wp-block-group__inner-container">
+                        <section class="home-project visible-tag">
+                            <div class="home-project__container">
+                                <div class="home-project__content">
+                                    <div
+                                        class="home-project__content-head lines-shift-container lines-shift-container--vt">
+                                        Project</div>
+                                    <a href="https://invoicify-noxlumomagna.vercel.app/" class="home-project__title-link">
+                                        <h2 class="home-project__title heading--display">Invoicify</h2>
+                                    </a>
+                                    <div class="home-project__tasks">Web Application.
+                                    </div>
+                                    <div class="home-project__description">An application built to ease the transactional process between user and client. 
+                                       </div>
+                                    <a href="https://invoicify-noxlumomagna.vercel.app/" class="home-project__link">
+                                        To Invoicify
+                                        <svg width="45" height="11" viewBox="0 0 45 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M39.6364 9.98889L44 5.98889M44 5.98889L39.6364 1.98889M44 5.98889H1"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="home-project__graphics">
+                                    <a href ="https://invoicify-noxlumomagna.vercel.app/">
+                                        <img class="home-project__graphics"
+                                            src="/images/invoicify-removebg-preview.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="home-project visible-tag">
+                            <div class="home-project__container">
+                                <div class="home-project__content">
+                                    <div
+                                        class="home-project__content-head lines-shift-container lines-shift-container--vt">
+                                        Project</div>
+                                    <a href="https://sportsrecoverylab.netlify.app/" class="home-project__title-link">
+                                        <h2 class="home-project__title heading--display"
+                                            >Sports Recovery Lab</h2>
+                                    </a>
+                                    <div class="home-project__tasks"
+                                        >Website Design</div>
+                                    <div class="home-project__description l"
+                                        >A simplified yet
+                                        efficient experience with an innovative approach to booking a chiropractor in the
+                                        digital space.</div>
+                                    <a href="https://sportsrecoverylab.netlify.app/" class="home-project__link">
+                                        To Sports Recovery Lab
+                                        <svg width="45" height="11" viewBox="0 0 45 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M39.6364 9.98889L44 5.98889M44 5.98889L39.6364 1.98889M44 5.98889H1"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="home-project__graphics">
+                                    <a href="https://sportsrecoverylab.netlify.app">
+                                        <img src="/images/SRLLogoNoBG.jpeg">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+                        <section class="home-project visible-tag">
+                            <div class="home-project__container">
+                                <div class="home-project__content">
+                                    <div
+                                        class="home-project__content-head lines-shift-container lines-shift-container--vt">
+                                        Project</div>
+                                    <a href="https://alphabetalley.netlify.app/" class="home-project__title-link">
+                                        <h2 class="home-project__title heading--display">Alphabet Alley</h2>
+                                    </a>
+                                    <div class="home-project__tasks">Website Design.
+                                    </div>
+                                    <div class="home-project__description">A website designed to be inviting and descriptive of a reputable child-care center.
+                                       </div>
+                                    <a href="https://alphabetalley.netlify.app/" class="home-project__link">
+                                        To Alphabet Alley
+                                        <svg width="45" height="11" viewBox="0 0 45 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M39.6364 9.98889L44 5.98889M44 5.98889L39.6364 1.98889M44 5.98889H1"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="home-project__graphics">
+                                    <a href ="https://alphabetalley.netlify.app/">
+                                        <img class="home-project__graphics"
+                                            src="/images/AlphabetAlleyLogo.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="home-project visible-tag">
+                            <div class="home-project__container">
+                                <div class="home-project__content">
+                                    <div
+                                        class="home-project__content-head lines-shift-container lines-shift-container--vt">
+                                        Project</div>
+                                    <a href="https://mapleglenhairsalon.netlify.app/" class="home-project__title-link">
+                                        <h2 class="home-project__title heading--display">Maple Glen Hair Salon</h2>
+                                    </a>
+                                    <div class="home-project__tasks">Website Design.</div>
+                                    <div class="home-project__description">Online store for local hair salon.</div>
+                                    <a href="https://mapleglenhairsalon.netlify.app/" class="home-project__link">
+                                        To Glen Maple Hair Salon
+                                        <svg width="45" height="11" viewBox="0 0 45 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M39.6364 9.98889L44 5.98889M44 5.98889L39.6364 1.98889M44 5.98889H1"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="home-project__graphics">        
+                                    <a href="https://mapleglenhairsalon.netlify.app/" class="home-project">
+                                        <img src="/images/MapleGlenHairSalon-removebg-preview.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="home-project visible-tag">
+                            <div class="home-project__container">
+                                <div class="home-project__content">
+                                    <div
+                                        class="home-project__content-head lines-shift-container lines-shift-container--vt">
+                                        Project</div>
+                                    <a href="index.html" class="home-project__title-link">
+                                        <h2 class="home-project__title heading--display">Coming Soon</h2>
+                                    </a>
+                                    <div class="home-project__tasks">Website Design &amp;
+                                        Concept.</div>
+                                    <div class="home-project__description">Future projects</div>
+                                    <a href="index.html" class="home-project__link">
+                                        To Be Continued...
+                                        <svg width="45" height="11" viewBox="0 0 45 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M39.6364 9.98889L44 5.98889M44 5.98889L39.6364 1.98889M44 5.98889H1"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="home-project__graphics">        
+                                    <a href="index.html" class="home-project">
+                                        <img src="/images/CSBackground.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wp-block-group bg--black-color">
+            <div class="wp-block-group__inner-container">
+                <div class="wp-block-group max-width-container">
+                    <div class="wp-block-group__inner-container">
+                        <div
+                            class="wp-block-group home-about-sections section-container achernov-accordion achernov-accordion--sm-only">
+                            <div class="wp-block-group__inner-container">
+                                <section class="home-about achernov-accordion__item achernov-accordion__item--active">
+                                    <h2 class="home-about__title heading--display achernov-accordion__title">About Me
+                                    </h2>
+                                    <div class="home-about__container achernov-accordion__content">
+                                        <div class="home-about__left">
+                                            <h2 class="home-about__title heading--display">About Me</h2>
+                                            <div class="home-about__description">I’m an American Software Engineer
+                                                &amp; Web Developer based in Philadelphia, Pennsylvania. I've a passion for what I
+                                                do and have done.
+                                                As an engineer and developer, I draw upon my experience in
+                                                concept development and team management to bring a comprehensive
+                                                and creative process to all projects. </div>
+                                        </div>
+                                        <div class="home-about__right">
+                                            <h3 class="home-about__subtitle heading--h3">I’ve developed for:
+                                            </h3>
+                                            <div class="home-about__text">Sports Recovery Lab
+                                                <br>Alphabet Alley
+                                                <br>Maple Glen Hair Salon
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg--black-color ">
+            <div class="max-width-container">
+                <section class="footer section-container">
+                    <h2 class="footer__title heading--display">Get In Touch</h2>
+                    <a href="mailto:noxlumomagna@gmail.com" class="footer__email">noxlumomagna@gmail.com</a>
+                    <div class="footer__social-links">
+                        <a href="https://www.linkedin.com/in/derick-nguyen-100devs/" class="footer__social-link link-underline">LinkedIn</a>
+                        <a href="https://twitter.com/KcireDNguyen" class="footer__social-link link-underline">Twitter</a>
+                        <a href="https://github.com/noxlumomagna" class="footer__social-link link-underline">Github</a>
+
+                    </div>
+                    <div class="footer__copyright">© Derick Nguyen. All Rights Reserved.</div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
